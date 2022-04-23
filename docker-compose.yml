@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  postgresdb:                      #Creamos el servicio de postgreSQL para identificar la imagen
+    image: postgres               #Usamos la imagen postgresql en la versión 12.6
+    volumes:
+      - ./postgresdb:/var/lib/postgresql  #Creamos un volumen para persistir los datos de la db
+    ports:                               
+      - "5433:5432"                       #Mapeamos el puerto 5432 para acceder a la db
+    environment:                          #Creamos las variables de entorno para configurar la db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: seminario
+  Login:                             #Creamos el servicio de servidor para identificar la imagen
+    image: login/microservicio:0.1                  #Usamos la imagen seminario en la versión 0.1
+    ports:
+      - "8090:8090"                       #Mapeamos el puerto 8080 para acceder al  APIrest
+    environment:                          #Creamos las variables de entorno para configurar al apiREST
+      SPRING_DATASOURCE_URL: jdbc:postgresql://172.17.0.1:5433/seminario
+    depends_on:
+      - postgresdb
+  Crud_preguntas:                             #Creamos el servicio de servidor para identificar la imagen
+    image: crud_preguntas/microservicio:0.1                  #Usamos la imagen seminario en la versión 0.1
+    ports:
+      - "8092:8092"                       #Mapeamos el puerto 8080 para acceder al  APIrest
+    environment:                          #Creamos las variables de entorno para configurar al apiREST
+      SPRING_DATASOURCE_URL: jdbc:postgresql://172.17.0.1:5433/seminario
+    depends_on:
+      - postgresdb
+  Crud_catalogo_preguntas:                             #Creamos el servicio de servidor para identificar la imagen
+    image: crud_catalogo_preguntas/microservicio:0.1                  #Usamos la imagen seminario en la versión 0.1
+    ports:
+      - "8091:8091"                       #Mapeamos el puerto 8080 para acceder al  APIrest
+    environment:                          #Creamos las variables de entorno para configurar al apiREST
+      SPRING_DATASOURCE_URL: jdbc:postgresql://172.17.0.1:5433/seminario
+    depends_on:
+      - postgresdb
