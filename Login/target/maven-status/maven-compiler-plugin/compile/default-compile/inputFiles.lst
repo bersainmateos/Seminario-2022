@@ -1,0 +1,8 @@
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Login/src/main/java/dev/seminario/LoginApplication.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Login/src/main/java/dev/seminario/ConfigCors.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Login/src/main/java/dev/seminario/entity/Administrador.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Login/src/main/java/dev/seminario/service/impl/administradorServiceImpl.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Login/src/main/java/dev/seminario/controller/ApiRest.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Login/src/main/java/dev/seminario/repository/administradorRepository.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Login/src/main/java/dev/seminario/DTO/ResponseHandler.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Login/src/main/java/dev/seminario/services/administradorService.java
