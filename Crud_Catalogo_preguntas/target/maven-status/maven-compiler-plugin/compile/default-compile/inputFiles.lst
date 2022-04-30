@@ -1,8 +1,8 @@
-/home/bersa/Documentos/Desarrollos Java/Crud_Catalogo_preguntas/src/main/java/dev/seminario/service/impl/Catalogo_preguntaServiceImp.java
-/home/bersa/Documentos/Desarrollos Java/Crud_Catalogo_preguntas/src/main/java/dev/seminario/entity/Catalogo_Pregunta.java
-/home/bersa/Documentos/Desarrollos Java/Crud_Catalogo_preguntas/src/main/java/dev/seminario/CrudCatalogoPreguntasApplication.java
-/home/bersa/Documentos/Desarrollos Java/Crud_Catalogo_preguntas/src/main/java/dev/seminario/DTO/ResponseHandler.java
-/home/bersa/Documentos/Desarrollos Java/Crud_Catalogo_preguntas/src/main/java/dev/seminario/controller/ApiRest.java
-/home/bersa/Documentos/Desarrollos Java/Crud_Catalogo_preguntas/src/main/java/dev/seminario/repository/Catalogo_preguntaRepository.java
-/home/bersa/Documentos/Desarrollos Java/Crud_Catalogo_preguntas/src/main/java/dev/seminario/services/Catalogo_preguntaService.java
-/home/bersa/Documentos/Desarrollos Java/Crud_Catalogo_preguntas/src/main/java/dev/seminario/ConfigCors.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Crud_Catalogo_preguntas/src/main/java/dev/seminario/repository/Catalogo_preguntaRepository.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Crud_Catalogo_preguntas/src/main/java/dev/seminario/CrudCatalogoPreguntasApplication.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Crud_Catalogo_preguntas/src/main/java/dev/seminario/service/impl/Catalogo_preguntaServiceImp.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Crud_Catalogo_preguntas/src/main/java/dev/seminario/entity/Catalogo_Pregunta.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Crud_Catalogo_preguntas/src/main/java/dev/seminario/DTO/ResponseHandler.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Crud_Catalogo_preguntas/src/main/java/dev/seminario/services/Catalogo_preguntaService.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Crud_Catalogo_preguntas/src/main/java/dev/seminario/controller/ApiRest.java
+/home/bersa/Documentos/Desarrollos Java/Seminario-2022/Crud_Catalogo_preguntas/src/main/java/dev/seminario/ConfigCors.java

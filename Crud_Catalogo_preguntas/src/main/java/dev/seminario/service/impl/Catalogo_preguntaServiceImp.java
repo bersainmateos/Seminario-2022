@@ -14,7 +14,7 @@ import dev.seminario.repository.Catalogo_preguntaRepository;
 import dev.seminario.services.Catalogo_preguntaService;
 
 /**
- * @author bersa
+ * @author Bersain Mateos Méndez
  *
  */
 

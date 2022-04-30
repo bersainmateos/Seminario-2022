@@ -15,15 +15,13 @@ public class ResponseHandler {
         
     	Map<String, Object> map = new HashMap<String, Object>();
     	ObjectMapper mapper = new ObjectMapper();
-        map.put("Message", "Extracción exitosa!");
-        map.put("Folio", getFolio());
 
-        if(responseObj == null){
-            map.put("Respuesta", data);
+    	if(responseObj == null){
+            map.put("resultado", data);
         }else{
-            map.put("Respuesta", mapper.readTree(responseObj));
+            map.put("resultado", mapper.readTree(responseObj));
         }
-
+    	
         return new ResponseEntity<Object>(map,status);
 
     }
@@ -33,9 +31,10 @@ public class ResponseHandler {
         
     	Map<String, Object> map = new HashMap<String, Object>();
 
-            map.put("Folio", getFolio());
-            map.put("Status",true);
-            map.put("Mensaje", responseObj);
+        map.put("mensaje", responseObj);
+        map.put("folio", getFolio());
+        map.put("status",true);
+
             
         return new ResponseEntity<Object>(map,status);
     }
@@ -45,9 +44,9 @@ public class ResponseHandler {
         
     	Map<String, Object> map = new HashMap<String, Object>();
 
-            map.put("Message", "Error interno en el servidor");
-            map.put("Folio", getFolio());
-            map.put("Status", false);
+            map.put("mensaje", "Error interno en el servidor");
+            map.put("folio", getFolio());
+            map.put("status", false);
                        
         return new ResponseEntity<Object>(map,status);
     }

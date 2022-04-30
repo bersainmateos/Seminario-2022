@@ -1,5 +1,4 @@
 #!/bin/bash
-./mvnw package
 
 clear
 
@@ -29,7 +28,10 @@ echo "          (_|_|_|_|_|_|_|_|_|_|_|_|_|__||_|_|_|_|_|_|_|_|_|_|_|_)"
 echo "              (_|_|_|_|_|_|_|_|_|_|_|__|_|_|_|_|_|_|_|_|_|_)"
 echo "                    (_|_|_|_|_|_|_|_|_|_|_|_|_|_|_)"
 
-cd Crud_Catalogo_preguntas/target
+cd Crud_Catalogo_preguntas
+./mvnw package
+cd target
+
 
 docker build -t crud_catalogo_preguntas/microservicio:0.1 .
 
@@ -54,7 +56,9 @@ echo "                    (_|_|_|_|_|_|_|_|_|_|_|_|_|_|_)"
 cd ..
 cd ..
 
-cd Crud_Preguntas/target
+cd Crud_Preguntas
+./mvnw package
+cd target
 
 docker build -t crud_preguntas/microservicio:0.1 .
 
@@ -80,9 +84,11 @@ echo "              (_|_|_|_|_|_|_|_|_|_|_|__|_|_|_|_|_|_|_|_|_|_)"
 echo "                    (_|_|_|_|_|_|_|_|_|_|_|_|_|_|_)"
 
 
-cd Login/target
-
+cd Login
+./mvnw package
+cd target
 docker build -t login/microservicio:0.1 .
+
 cd ..
 cd ..
 
@@ -106,7 +112,7 @@ echo "
   \____\___/|_| \_\_| \_\_____\____| |_/_/   \_\_|  |_|_____|_| \_| |_| |_____|
 "
 
-docker-compose up
+docker-compose up -d
 
 echo "#########################################################################################################################################################"
 docker ps
