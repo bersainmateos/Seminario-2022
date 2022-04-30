@@ -28,9 +28,7 @@ echo "          (_|_|_|_|_|_|_|_|_|_|_|_|_|__||_|_|_|_|_|_|_|_|_|_|_|_)"
 echo "              (_|_|_|_|_|_|_|_|_|_|_|__|_|_|_|_|_|_|_|_|_|_)"
 echo "                    (_|_|_|_|_|_|_|_|_|_|_|_|_|_|_)"
 
-cd Crud_Catalogo_preguntas
-./mvnw package
-cd target
+cd Crud_Catalogo_preguntas/target
 
 
 docker build -t crud_catalogo_preguntas/microservicio:0.1 .
@@ -56,9 +54,7 @@ echo "                    (_|_|_|_|_|_|_|_|_|_|_|_|_|_|_)"
 cd ..
 cd ..
 
-cd Crud_Preguntas
-./mvnw package
-cd target
+cd Crud_Preguntas/target
 
 docker build -t crud_preguntas/microservicio:0.1 .
 
@@ -84,9 +80,7 @@ echo "              (_|_|_|_|_|_|_|_|_|_|_|__|_|_|_|_|_|_|_|_|_|_)"
 echo "                    (_|_|_|_|_|_|_|_|_|_|_|_|_|_|_)"
 
 
-cd Login
-./mvnw package
-cd target
+cd Login/target
 docker build -t login/microservicio:0.1 .
 
 cd ..
